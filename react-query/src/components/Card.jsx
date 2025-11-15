@@ -1,6 +1,6 @@
 import { useQueries, useSuspenseQuery } from '@tanstack/react-query'
 import React from 'react'
-import {createTodoQueryOptions,createUsersQueryOptions,createPostQueryOptions} from '../queryOptions/crerateTodoQueryOptions'
+import {createTodoQueryOptions,createUsersQueryOptions,createPostQueryOptions} from '../queryOptions/crerateTodoQueryOptions';
 
 export default function Card() {
     const {data} = useSuspenseQuery(createTodoQueryOptions());
